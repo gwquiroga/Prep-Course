@@ -76,7 +76,7 @@ function colors(color) {
 switch (color){
   case "blue" :
   return "This is blue";
-  break;
+  break; // este break no se ejecuta porque antes esta el return que corta la linea
   case "red":
   return "This is red";
   break;
@@ -127,6 +127,10 @@ if ( Number.isInteger (numero)){
   return false;
 }
 }
+// tambien se puede colocar en una linea
+// return numero%1 === 0
+// esa linea me indica si un numero es entero o no y el return evalua la expresion
+
 
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
@@ -163,6 +167,8 @@ if (num1 < 0 || num2 < 0 || num3 < 0){
   return "Número 1 es mayor y positivo";
 } if (num3 > num1 & num3 > num2){
   var nuevoNum3 = num3 + 1;
+
+  // se puede hacer num3++ y le suma un valor
   return nuevoNum3;
 } else {
   return false;
@@ -214,7 +220,7 @@ function tablaDelSeis(){
   let i;
   for (i = 0; i <= 10; i++){
     Arraytabla.push (6 * i);
-    
+  // el metodo push va añadiendo valores al conjunto definido (Array)
   }   
   return Arraytabla;
 }
