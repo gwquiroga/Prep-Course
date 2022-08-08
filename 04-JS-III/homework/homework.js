@@ -106,7 +106,7 @@ function promedioResultadosTest(resultadosTest) {
   for (var i = 0 ; i < resultadosTest.length; i++){
     suma = suma + resultadosTest [i]
   }
-  var promedio = suma / resultadosTest.length
+  var promedio = Math.ceil(suma / resultadosTest.length);
   return promedio
 }
 
